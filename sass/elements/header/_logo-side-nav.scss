@@ -54,6 +54,19 @@
  */
 #et-secondary-nav {
   margin-bottom: 0;
+
+  .bottone a {
+    @extend %button;
+
+    @include button(p, 2, half);
+
+    @include button-color();
+
+    margin: 0 !important;
+
+    padding-left: font(h5, lh) / 2;
+    padding-right: font(h5, lh) / 2;
+  }
 }
 
 
