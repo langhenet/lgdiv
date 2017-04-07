@@ -58,7 +58,7 @@
   .bottone a {
     @extend %button;
 
-    @include button(p, 2, half);
+    @include button(h5, 2);
 
     @include button-color();
 
@@ -77,8 +77,9 @@
 #et-info,
 #et-secondary-menu>ul>li a {
   padding-bottom: 0;
-  font-size: font(p, fs);
-  line-height: font(p, lh);
+  font-size: font(h5, fs);
+  line-height: font(h5, lh);
+  margin-bottom: 0;
 }
 
 /*
@@ -87,6 +88,7 @@
 #top-header .et-social-icon a {
   font-size: font(p, fs);
   line-height: font(p, lh);
+  margin-bottom: 0;
 }
 
 

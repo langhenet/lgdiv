@@ -272,12 +272,91 @@
 //                               FRECCETTE CHE SCROLLANO
 //****************************************************************************//
 #intro .et_parallax_bg::before {
-  @include color-overlay(socket);
 }
 
 #intro {
 
   p {
     @include size(h3);
+  }
+}
+
+
+
+//****************************************************************************//
+//    OVERLAY
+//****************************************************************************//
+///
+//DARK
+///
+.overlay--dark,
+.et_pb_section.overlay--dark {
+  position: relative;
+
+  &::before {
+    @include color-overlay($palette: main, $grade: 0.30);
+  }
+
+  .et_pb_module {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+
+///
+//COLOR OVERLAY
+///
+.overlay--color,
+.et_pb_section.overlay--color {
+  position: relative;
+  background-blend-mode: luminosity;
+
+  .et_pb_module {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    @include color-overlay($palette: main, $grade: 0.90);
+  }
+}
+
+@each $palette, $sections in $colors {
+  .#{$palette}.overlay--color,
+  .et_pb_section.#{$palette}.overlay--color {
+
+    &::before {
+      @include color-overlay($palette: $palette, $grade: 0.8);
+    }
+  }
+}
+
+
+
+///
+//COLOR FILTER
+///
+.color--filter,
+.et_pb_section.color--filter {
+  position: relative;
+  background-blend-mode: luminosity;
+
+  .et_pb_module {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    @include color-overlay($palette: main, $grade: 0.00);
+  }
+}
+
+@each $palette, $sections in $colors {
+  .#{$palette}.color--filter,
+  .et_pb_section.#{$palette}.color--filter {
+    &::before {
+      @include color-overlay($palette: $palette, $grade: 0.0);
+    }
   }
 }

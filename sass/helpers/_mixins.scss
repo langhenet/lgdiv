@@ -339,12 +339,18 @@
 ///
 // Overlay di colore da mettere sui ::before //TOCR
 ///
-@mixin color-overlay($palette: main) {
+
+///
+// Overlay di colore da mettere sui ::before //TOCR
+///
+@mixin color-overlay($palette: main, $grade: 0.3) {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left:0;
-  background: palette($palette, overlay);
+//  background: palette($palette, overlay);
+  background-color: rgba( palette($palette, overlay), $grade);
+  z-index: 0;
 }

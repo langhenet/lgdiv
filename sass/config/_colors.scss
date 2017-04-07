@@ -98,7 +98,7 @@ $colors: (
     form-link: $grigio-scuro,
     form-desc: $grigio,
 
-    overlay:    rgba($nero, 0.25),      //Colore sfondo overlay
+    overlay:    $nero,      //Colore sfondo overlay
 
     button:     $bianco,      //colore bottone
     button-bg:  $arancio,      //bg bottone
@@ -126,7 +126,7 @@ $colors: (
     form-link: $arancio,
     form-desc: $grigio,
 
-    overlay:    rgba($nero, 0.25),      //Colore sfondo overlay
+    overlay:    $nero,      //Colore sfondo overlay
 
     button:     $bianco,      //colore bottone
     button-bg:  $arancio,
@@ -154,7 +154,7 @@ $colors: (
     form-link: $nero,
     form-desc: $bianco,
 
-    overlay:    rgba($nero, 0.5),      //Colore sfondo overlay
+    overlay:    $nero,      //Colore sfondo overlay
 
     button:     $bianco,      //colore bottone
     button-bg:  $verde,
