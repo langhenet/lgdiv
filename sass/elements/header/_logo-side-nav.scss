@@ -32,7 +32,9 @@
    transition: all 0.1s;
 
    #et-secondary-nav {
-     display:none;
+     //display: none;
+        position: fixed;
+   top: -$line-height;
    }
  }
 }

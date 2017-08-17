@@ -26,6 +26,7 @@ $grigio-chiaro: #cecece;
 $grigio-chiarissimo: #f0f0f0;
 $bianco: #ffffff;
 $nero: #222222;
+$nero-vero: #000;
 $verde: #3f9f00;
 
 /*
@@ -126,7 +127,7 @@ $colors: (
     form-link: $arancio,
     form-desc: $grigio,
 
-    overlay:    $nero,      //Colore sfondo overlay
+    overlay:    $nero-vero,      //Colore sfondo overlay
 
     button:     $bianco,      //colore bottone
     button-bg:  $arancio,

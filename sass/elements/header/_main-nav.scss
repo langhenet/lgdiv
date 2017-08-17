@@ -190,3 +190,26 @@
 .mobile_menu_bar:before {
   color: main-color(header, accent);
 }
+
+/*
+ * Bottone scrollato
+ */
+.et-fixed-header #et-secondary-nav .bottone--float a {
+  position: fixed;
+  bottom: 2em;
+  display: inline-block;
+  border-bottom: 0;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 100%;
+  padding: $line-height;
+  width: $line-height * 4;
+  line-height: $line-height;
+  height: $line-height * 4;
+  text-align: center;
+  font-size: 1em;
+
+  &:hover {
+    opacity: 1;
+    bottom: 2.1em;
+  }
+}

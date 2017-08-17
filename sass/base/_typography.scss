@@ -143,7 +143,7 @@ p {color: palette(main, body);}
  */
 @each $palette, $sections in $colors {
   .#{$palette}_color {
-    p {
+    p, li {
       color: palette($palette, body)
     }
 
