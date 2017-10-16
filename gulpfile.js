@@ -40,7 +40,7 @@ gulp.task('sass', function () {
         //.pipe(postcss([ autoprefixer({ browsers: ['last 10 versions'] }) ]))
         .pipe(minifyCSS({keepSpecialComments:1}))
         .pipe(rename('style.css')) //rinomina il file minifcato
-        .pipe(sourceMaps.write())
+    //    .pipe(sourceMaps.write())
         .pipe(gulp.dest('./'))
         .pipe(reload({stream:true}));
 

@@ -303,6 +303,16 @@
   }
 }
 
+.et_pb_section.overlay--dark .et_parallax_bg {
+  &::before {
+    @include color-overlay($palette: main, $grade: 0.30);
+  }
+
+  .et_pb_module {
+    position: relative;
+    z-index: 1;
+  }
+}
 
 ///
 //COLOR OVERLAY
