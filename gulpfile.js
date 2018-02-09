@@ -36,7 +36,7 @@ gulp.task('sass', function () {
         .pipe(postcss([ autoprefixer({ browsers: ['last 7 versions'] }) ])) // aggiunge css di autoprefixer
         .pipe(rename('unmin-style.css')) //rinomina il file
         .pipe(gulp.dest('./'))
-        .pipe(sourceMaps.init())
+        //.pipe(sourceMaps.init())
         //.pipe(postcss([ autoprefixer({ browsers: ['last 10 versions'] }) ]))
         .pipe(minifyCSS({keepSpecialComments:1}))
         .pipe(rename('style.css')) //rinomina il file minifcato
